@@ -19,6 +19,7 @@
 header {
   background-color: var(--color-primary);
   min-height: 550px;
+  min-width: 100%;
 }
 
 nav {
@@ -26,6 +27,9 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1em 5em;
+  position: sticky;
+  transition: 0.3s;
+  z-index: 999;
 }
 
 nav .logo {
@@ -43,11 +47,11 @@ nav .logo {
 }
 
 .logo > span {
-  font-weight: 800;
+  font-weight: 700;
 }
 
 /* LIENS DE NAVIGATIONS */
-ul {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,7 +59,7 @@ ul {
   list-style: none;
 }
 
-ul li > a {
+.nav li > a {
   color: #fff;
   text-decoration: none;
   font-family: var(--font-titre);
@@ -64,10 +68,77 @@ ul li > a {
   transition: 0.4s ease;
 }
 
-ul .active {
+.nav .active {
   color: var(--color-secondary);
 }
 
-ul li > a:hover {
+.nav li > a:hover {
   color: var(--color-secondary);
+}
+
+.menu__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__btn > span {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 2.5px;
+  border-radius: 20px;
+}
+
+#menu__toggle,
+.menu__btn,
+.menu__btn > span {
+  visibility: hidden;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 686px) {
+  header {
+    min-height: 550px;
+    min-width: 100%;
+  }
+
+  nav {
+    padding: 1em 2em;
+    background-color: var(--color-primary);
+  }
+
+  nav .menu__btn > span {
+    visibility: visible;
+  }
+
+  .nav {
+    display: none;
+    gap: 20px;
+  }
+
+  #menu__toggle:checked ~ .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: -35px;
+    text-align: center;
+    background-color: var(--color-primary);
+    padding: 2em;
+    width: 100%;
+  }
+
+  #menu__toggle:checked + .menu__btn span:nth-child(1) {
+    transform: rotate(45deg) translateY(5px);
+  }
+  #menu__toggle:checked + .menu__btn span:nth-child(2) {
+    transform: rotate(-45deg) translateY(-6px);
+  }
+  #menu__toggle:checked + .menu__btn span:nth-child(3) {
+    display: none;
+  }
 }
