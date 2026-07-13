@@ -307,9 +307,7 @@ button:hover {
   }
 
   .info {
-    color: var(--color-secondary);
-    font-size: 0.885rem;
-    font-weight: 600;
+    font-size: 0.598rem;
   }
 
   .hero .content {
