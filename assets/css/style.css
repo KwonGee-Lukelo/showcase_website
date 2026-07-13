@@ -8,6 +8,7 @@
   --color-button: #fcb731;
   --color-badge: #fc8630;
   --font-titre: "Poppins", sans-serif;
+  --font-text: "Inter", sans-serif;
 }
 
 * {
@@ -18,8 +19,9 @@
 
 header {
   background-color: var(--color-primary);
-  min-height: 550px;
-  min-width: 100%;
+  height: 620px;
+  min-height: 500px;
+  width: 100%;
 }
 
 nav {
@@ -43,7 +45,8 @@ nav .logo {
 }
 
 .logo > img {
-  max-height: 40px;
+  height: 40px;
+  max-height: 25px;
 }
 
 .logo > span {
@@ -96,7 +99,7 @@ nav .logo {
   visibility: hidden;
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES MOBILE*/
 @media screen and (max-width: 686px) {
   header {
     min-height: 550px;
@@ -104,8 +107,13 @@ nav .logo {
   }
 
   nav {
-    padding: 1em 2em;
+    padding: 1em 1em;
     background-color: var(--color-primary);
+  }
+
+  nav .logo {
+    gap: 3px;
+    font-size: 1.5rem;
   }
 
   nav .menu__btn > span {
@@ -140,5 +148,218 @@ nav .logo {
   }
   #menu__toggle:checked + .menu__btn span:nth-child(3) {
     display: none;
+  }
+}
+
+/* HERO SECTION */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  min-width: 70%;
+  font-family: var(--font-text);
+  font-weight: 300;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  padding: 5em 2em;
+}
+
+.hero .content {
+  color: #fff;
+  font-size: 1.35rem;
+  flex: 1.5;
+  z-index: 5;
+}
+
+.info {
+  color: var(--color-secondary);
+  font-size: 0.885rem;
+  font-weight: 600;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 5rem;
+  font-family: var(--font-titre);
+  letter-spacing: 3px;
+  line-height: 80px;
+}
+
+.hero .subtitle {
+  margin: 1em 0 1em 0;
+  font-size: 1.125rem;
+  font-weight: 200;
+}
+
+button {
+  border: none;
+  background-color: var(--color-button);
+  border-radius: 7px;
+  padding: 1em 2em;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--color-badge);
+}
+
+.delivery {
+  position: relative;
+  margin-top: 85px;
+}
+
+.delivery .circle {
+  position: absolute;
+  top: -25px;
+  left: 10px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: var(--color-badge);
+}
+
+.delivery__person {
+  display: flex;
+}
+
+.delivery__person img {
+  position: absolute;
+  top: -40px;
+  left: -20px;
+  height: 200px;
+  transform: rotateY(180deg);
+}
+
+.delivery__text {
+  position: absolute;
+  top: -7px;
+  left: 120px;
+  background-color: #fff;
+  width: 350px;
+  padding: 2em 1em;
+  z-index: -1;
+}
+
+.delivery__text h3 {
+  color: var(--color-secondary);
+  margin: 0 0 0.5em 1em;
+}
+.delivery__text p {
+  color: black;
+  font-size: small;
+  margin-left: 3em;
+  font-weight: 500;
+}
+
+.illustration__content {
+  flex: 1;
+  z-index: 1;
+}
+
+.illustration__back {
+  position: relative;
+  height: 550px;
+  width: 400px;
+  background-color: var(--color-button);
+  z-index: -1;
+}
+
+.illustration__image {
+  position: absolute;
+  top: 70px;
+  right: 10px;
+}
+
+.illustration__content img {
+  height: 520px;
+}
+
+.illustration__contact {
+  position: absolute;
+  top: 110%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: 900;
+  line-height: 25px;
+}
+
+.phone__number {
+  font-size: 1.75rem;
+}
+
+@media screen and (max-width: 686px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    padding: 5em 0em;
+  }
+
+  .info {
+    color: var(--color-secondary);
+    font-size: 0.885rem;
+    font-weight: 600;
+  }
+
+  .hero .content {
+    flex: 0;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    line-height: 40px;
+  }
+
+  .hero .subtitle {
+    margin: 1em 0 1em 0;
+    font-size: 1.025rem;
+    font-weight: 200;
+    width: 350px;
+  }
+
+  .delivery {
+    display: none;
+  }
+
+  .illustration__back {
+    position: relative;
+    top: 60px;
+    width: 320px;
+    margin: 0 auto;
+    height: 170px;
+    background-color: var(--color-button);
+    z-index: -1;
+  }
+
+  .illustration__image {
+    top: 400px;
+    right: -5px;
+  }
+
+  .illustration__content img {
+    height: 220px;
+  }
+
+  .illustration__contact {
+    top: 72%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    line-height: 19px;
+  }
+
+  .phone__number {
+    font-size: 0.7rem;
   }
 }
