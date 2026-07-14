@@ -442,3 +442,88 @@ button:hover {
     margin-top: 0.4em;
   }
 }
+/****************************
+**************************
+********************
+***CONTENU PRINCIPALE*/
+main {
+  padding: 10em 2em;
+}
+
+/**************************
+********************
+SECTION__HEADER*/
+.background__section img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 21/9;
+  filter: blur(2px);
+}
+
+.reduction {
+  position: absolute;
+  /* top: 100%; */
+  left: 250px;
+  bottom: -550px;
+  color: #fff;
+}
+
+.reduction .badge {
+  background-color: var(--color-badge);
+  padding: 1em;
+  width: 75px;
+  border-radius: 30px;
+  color: #fff;
+  margin-bottom: 0.8em;
+  font-weight: 700;
+}
+
+.reduction h2 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.reduction .subtitle {
+  width: 65%;
+  margin: 2em 0;
+}
+
+/**************************
+********************
+MENU*/
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger img {
+  height: 450px;
+}
+
+.burger__details {
+  padding: 1em;
+}
+
+.burger__details h3 {
+  font-size: 2.7rem;
+  font-family: var(--font-titre);
+}
+
+.burger__details h4 {
+  font-weight: 500;
+  font-size: 1.3rem;
+  padding-bottom: 1em;
+}
+
+.burger__subtitle {
+  width: 350px;
+}
+
+.cta {
+  display: flex;
+  gap: 10px;
+  padding-top: 2em;
+}
