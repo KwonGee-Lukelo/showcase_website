@@ -46,7 +46,7 @@ nav .logo {
 
 .logo > img {
   height: 40px;
-  max-height: 25px;
+  min-height: 25px;
 }
 
 .logo > span {
@@ -649,8 +649,8 @@ a {
   color: #fff;
 }
 
-.us .logo img {
-  height: 50px;
+.us .logo > img {
+  height: 25px;
 }
 
 .us .logo,
