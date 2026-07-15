@@ -527,3 +527,171 @@ article {
   gap: 10px;
   padding-top: 2em;
 }
+
+/**************************
+********************
+ABOUT*/
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--color-primary);
+  padding: 2em;
+  color: #fff;
+}
+
+.about__image img {
+  height: 450px;
+  border-radius: 25px;
+}
+
+.about__content h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.about__content p {
+  padding: 0.8em 0;
+  text-align: justify;
+}
+
+.about__content p span {
+  color: var(--color-button);
+  font-weight: 800;
+}
+
+/**************************
+********************
+INFORMATION*/
+.informations {
+  margin-top: 5em;
+}
+
+.informations h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.cards__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+  list-style: none;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1em;
+  box-shadow: 0 2px 5px 1px rgba(207, 204, 204, 0.5);
+  text-align: center;
+  border-radius: 15px;
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.address {
+  grid-column: 1 / span 5;
+}
+
+.address h3,
+.card h3 {
+  margin-bottom: 1em;
+}
+
+.services {
+  grid-column: 3 / span 3;
+  background-color: var(--color-secondary);
+}
+
+/**************************
+********************
+INFORMATION*/
+footer {
+  background-color: var(--color-primary);
+  padding: 3em;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 90px;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+.us,
+.special,
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.us {
+  flex: 2;
+}
+
+.us a,
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.us .logo img {
+  height: 50px;
+}
+
+.us .logo,
+.special h4,
+.footer__address h4 {
+  font-size: 2rem;
+  font-family: var(--font-titre);
+}
+
+.us__subtitle {
+  margin-bottom: 1em;
+}
+
+.us ul {
+  display: flex;
+  gap: 10px;
+}
+
+.us ul a {
+  background-color: var(--color-secondary);
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transition: 0.4s ease-in-out;
+}
+
+.us ul a:hover {
+  background-color: var(--color-badge);
+}
+
+.footer__address {
+  flex: 2;
+}
+
+.footer__address ul li,
+.special ul li {
+  margin-bottom: 0.7em;
+}
+
+.copy {
+  text-align: center;
+  margin-top: 5em;
+  color: #c4c2c2f1;
+  font-family: var(--font-text);
+}
