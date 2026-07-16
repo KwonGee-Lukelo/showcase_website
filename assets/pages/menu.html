@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.min.css"
     />
     <!-- <link rel="stylesheet" href="/assets/css/style.css" /> -->
     <link rel="stylesheet" href="/assets/css/style2.css" />
     <title>Burger Guys</title>
   </head>
 
-  <body class="page">
+  <body>
     <header>
       <nav>
         <a href="/index.html" class="logo" aria-label="logo">
@@ -53,14 +53,11 @@
       </nav>
     </header>
 
-    <main class="container">
+    <main class="container page">
       <section class="products__header">
         <p class="products__eyebrow">BURGER GUYS</p>
-        <h1 class="products__title">Le Meilleur Burger de Kinshasa</h1>
-        <p class="products__text">
-          Découvrez trois plats populaires de la République démocratique du
-          Congo, présentés dans des cartes élégantes et modernes.
-        </p>
+        <h1 class="products__title">Le meilleur burger de Kinshasa</h1>
+        <p class="products__text">Découvrez le goût qui fait la différence</p>
       </section>
 
       <section class="products__grid">
@@ -641,187 +638,76 @@
         </article>
       </section>
     </main>
-    <!-- <main class="products" aria-label="Catalogue de plats congolais">
-      <header class="products__header">
-        <p class="products__eyebrow">Burger Guys</p>
-        <h1 class="products__title">Les Meilleurs Burgers de Kinshasa</h1>
-        <p class="products__text">
-          Découvrez trois plats populaires de la République démocratique du
-          Congo, présentés dans des cartes élégantes et modernes.
-        </p>
-      </header>
 
-      <section class="products__grid">
-        <article class="product-card" aria-label="Carte du plat Pondu">
-          <div class="product-card__visual">
-            <img
-              class="product-card__image"
-              src="./image/plat3.jpg"
-              alt="Plat de Pondu avec poulet et fufu"
-            />
-            <span class="product-card__label product-card__label--promo"
-              >Promo</span
-            >
-          </div>
+    <footer>
+      <section class="footer container">
+        <div class="us">
+          <h4 class="logo" aria-label="logo">
+            <img src="/assets/images/logo.png" alt="logo burger" />
+            Burger Guys
+          </h4>
 
-          <div class="product-card__body">
-            <div class="product-card__tags">
-              <span class="product-card__tag">Congolais</span>
-            </div>
+          <p class="us__subtitle subtitle">
+            Des burgers généreux, préparés avec des produits frais et une viande
+            100% boeuf. Le goût qui fait la différence
+          </p>
 
-            <h2 class="product-card__title">Pondu royal</h2>
-            <p class="product-card__description">
-              Feuilles de manioc mijotées avec huile de palme, épices douces et
-              poisson fumé. Un plat riche et traditionnel.
-            </p>
+          <ul>
+            <li>
+              <a href="#" aria-label="Instagram" target="_blank"
+                ><i class="ri-instagram-fill" aria-label="Instagram"></i
+              ></a>
+            </li>
 
-            <div class="product-card__meta">
-              <div class="product-card__price">8 500 FCFA</div>
-              <div class="product-card__rating" aria-label="Note 4.9 étoiles">
-                ★★★★☆ <span>4.9</span>
-              </div>
-            </div>
+            <li>
+              <a href="#" aria-label="titkok" target="_blank"
+                ><i class="ri-tiktok-fill" aria-label="Tiktok"></i
+              ></a>
+            </li>
 
-            <div class="product-card__actions">
-              <button
-                class="product-card__button product-card__button--primary"
-                type="button"
+            <li>
+              <a href="#" aria-label="Whatsapp" target="_blank"
+                ><i class="ri-whatsapp-fill" aria-label="Github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="special">
+          <h4>SPECIALITE</h4>
+          <ul>
+            <li>Beff Burger</li>
+            <li>Chicken Burger</li>
+            <li>Classic Burger</li>
+          </ul>
+        </div>
+
+        <address class="footer__address">
+          <h4>CONTACT NOUS</h4>
+          <ul>
+            <li>
+              <i class="ri-map-pin-line" aria-label="Localisation"></i>
+              Bd Du 30 Juin, 3ème Etage, Matrix Mall
+            </li>
+
+            <li>
+              <i class="ri-phone-line" aria-label="Telephone"></i>
+              <a href="tel:+243826002323" aria-label="Numero de telephone"
+                >+243 82 600 2323</a
               >
-                🛒 Ajouter au panier
-              </button>
-              <button
-                class="product-card__button product-card__button--icon"
-                type="button"
-                aria-label="Favoriser Pondu"
+            </li>
+
+            <li>
+              <i class="ri-mail-fill" aria-label="Email"></i>
+              <a
+                href="mailto:contact@burgerguys.cd?subjecy=Demande d'information&body=Bonjour Burgr Guys,"
+                >contact@burgerguys.cd</a
               >
-                ♥
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <article
-          class="product-card"
-          aria-label="Carte du plat Liboké de poisson"
-        >
-          <div class="product-card__visual">
-            <img
-              class="product-card__image"
-              src="./image/plat7.jpg"
-              alt="Liboké de poisson servi avec légumes"
-            />
-            <span class="product-card__label product-card__label--best"
-              >Best seller</span
-            >
-            <button
-              class="product-card__favorite"
-              type="button"
-              aria-label="Ajouter Liboké de poisson aux favoris"
-            >
-              ♥
-            </button>
-          </div>
-
-          <div class="product-card__body">
-            <div class="product-card__tags">
-              <span class="product-card__tag">Traditionnel</span>
-              <span class="product-card__tag product-card__tag--soft"
-                >Poisson</span
-              >
-            </div>
-
-            <h2 class="product-card__title">Liboké de poisson</h2>
-            <p class="product-card__description">
-              Poisson grillé en feuilles de bananier, parfumé aux herbes locales
-              et servi avec une sauce onctueuse.
-            </p>
-
-            <div class="product-card__meta">
-              <div class="product-card__price">12 000 FCFA</div>
-              <div class="product-card__rating" aria-label="Note 4.8 étoiles">
-                ★★★★☆ <span>4.8</span>
-              </div>
-            </div>
-
-            <div class="product-card__actions">
-              <button
-                class="product-card__button product-card__button--primary"
-                type="button"
-              >
-                🛒 Ajouter au panier
-              </button>
-              <button
-                class="product-card__button product-card__button--icon"
-                type="button"
-                aria-label="Favoriser Liboké de poisson"
-              >
-                ♥
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <article
-          class="product-card"
-          aria-label="Carte du plat Cuisine congolaise"
-        >
-          <div class="product-card__visual">
-            <img
-              class="product-card__image"
-              src="./image/plat2.jpg"
-              alt="Assiette de plats congolais variés"
-            />
-            <span class="product-card__label product-card__label--new"
-              >Nouveau</span
-            >
-            <button
-              class="product-card__favorite"
-              type="button"
-              aria-label="Ajouter Délice local aux favoris"
-            >
-              ♥
-            </button>
-          </div>
-
-          <div class="product-card__body">
-            <div class="product-card__tags">
-              <span class="product-card__tag">Local</span>
-              <span class="product-card__tag product-card__tag--soft"
-                >Famille</span
-              >
-            </div>
-
-            <h2 class="product-card__title">Délice local</h2>
-            <p class="product-card__description">
-              Assiette généreuse de riz, haricots, légumes et viande mijotée,
-              pour une expérience congolaise authentique.
-            </p>
-
-            <div class="product-card__meta">
-              <div class="product-card__price">7 200 FCFA</div>
-              <div class="product-card__rating" aria-label="Note 4.7 étoiles">
-                ★★★★☆ <span>4.7</span>
-              </div>
-            </div>
-
-            <div class="product-card__actions">
-              <button
-                class="product-card__button product-card__button--primary"
-                type="button"
-              >
-                🛒 Ajouter au panier
-              </button>
-              <button
-                class="product-card__button product-card__button--icon"
-                type="button"
-                aria-label="Favoriser Délice local"
-              >
-                ♥
-              </button>
-            </div>
-          </div>
-        </article>
+            </li>
+          </ul>
+        </address>
       </section>
-    </main> -->
+      <div class="copy">&copy;Burger Guys - Tout droit reservés</div>
+    </footer>
   </body>
 </html>

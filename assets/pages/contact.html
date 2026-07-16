@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.min.css"
+    />
+    <!-- <link rel="stylesheet" href="/assets/css/style.css" /> -->
+    <link rel="stylesheet" href="/assets/css/style2.css" />
+    <title>Burger Guys</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="/index.html" class="logo" aria-label="logo">
+          <img src="/assets/images/logo.png" alt="logo burger" />
+          <span>BG</span>
+        </a>
+
+        <input type="checkbox" name="menu__toggle" id="menu__toggle" />
+        <label for="menu__toggle" class="menu__btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <ul class="nav">
+          <li class="nav__item">
+            <a href="/index.html" class="nav__link active" aria-label="Acceuil"
+              >Acceuil</a
+            >
+          </li>
+          <li class="nav__item">
+            <a
+              href="/assets/pages/menu.html"
+              class="nav__link"
+              aria-label="Menu"
+              >Menu</a
+            >
+          </li>
+          <li class="nav__item">
+            <a
+              href="/assets/pages/contact.html"
+              class="nav__link"
+              aria-label="Contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="contact-section" aria-labelledby="contact-title">
+        <div class="contact-card">
+          <div class="contact-card__media">
+            <img
+              src="/assets/images/about.jpg"
+              alt="Un burger servi dans un cadre chaleureux"
+            />
+            <div class="contact-card__overlay">
+              <p class="contact-card__eyebrow">Contactez-nous</p>
+              <h1 id="contact-title">Une question ? Un besoin particulier ?</h1>
+              <p>
+                Nous sommes à votre écoute pour vous aider à réserver, commander
+                ou découvrir notre menu.
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-card__form-panel">
+            <form class="contact-form" action="#" method="post">
+              <div class="contact-form__header">
+                <p class="contact-form__eyebrow">Formulaire</p>
+                <h2>Écrivez-nous</h2>
+              </div>
+
+              <div class="contact-form__group">
+                <label for="nom">Nom complet</label>
+                <input
+                  id="nom"
+                  name="nom"
+                  type="text"
+                  placeholder="Votre nom"
+                  required
+                />
+              </div>
+
+              <div class="contact-form__group">
+                <label for="email">Adresse e-mail</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="votre@email.com"
+                  required
+                />
+              </div>
+
+              <div class="contact-form__group">
+                <label for="telephone">Téléphone</label>
+                <input
+                  id="telephone"
+                  name="telephone"
+                  type="tel"
+                  placeholder="Votre numéro"
+                />
+              </div>
+
+              <div class="contact-form__group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Dites-nous ce dont vous avez besoin"
+                  required
+                ></textarea>
+              </div>
+
+              <button class="contact-form__button" type="submit">
+                Envoyer
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer container">
+        <div class="us">
+          <h4 class="logo" aria-label="logo">
+            <img src="/assets/images/logo.png" alt="logo burger" />
+            Burger Guys
+          </h4>
+
+          <p class="us__subtitle subtitle">
+            Des burgers généreux, préparés avec des produits frais et une viande
+            100% boeuf. Le goût qui fait la différence
+          </p>
+
+          <ul>
+            <li>
+              <a href="#" aria-label="Instagram" target="_blank"
+                ><i class="ri-instagram-fill" aria-label="Instagram"></i
+              ></a>
+            </li>
+
+            <li>
+              <a href="#" aria-label="titkok" target="_blank"
+                ><i class="ri-tiktok-fill" aria-label="Tiktok"></i
+              ></a>
+            </li>
+
+            <li>
+              <a href="#" aria-label="Whatsapp" target="_blank"
+                ><i class="ri-whatsapp-fill" aria-label="Github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="special">
+          <h4>SPECIALITE</h4>
+          <ul>
+            <li>Beff Burger</li>
+            <li>Chicken Burger</li>
+            <li>Classic Burger</li>
+          </ul>
+        </div>
+
+        <address class="footer__address">
+          <h4>CONTACT NOUS</h4>
+          <ul>
+            <li>
+              <i class="ri-map-pin-line" aria-label="Localisation"></i>
+              Bd Du 30 Juin, 3ème Etage, Matrix Mall
+            </li>
+
+            <li>
+              <i class="ri-phone-line" aria-label="Telephone"></i>
+              <a href="tel:+243826002323" aria-label="Numero de telephone"
+                >+243 82 600 2323</a
+              >
+            </li>
+
+            <li>
+              <i class="ri-mail-fill" aria-label="Email"></i>
+              <a
+                href="mailto:contact@burgerguys.cd?subjecy=Demande d'information&body=Bonjour Burgr Guys,"
+                >contact@burgerguys.cd</a
+              >
+            </li>
+          </ul>
+        </address>
+      </section>
+      <div class="copy">&copy;Burger Guys - Tout droit reservés</div>
+    </footer>
+  </body>
+</html>
