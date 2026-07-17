@@ -847,6 +847,10 @@ a {
     height: 250px;
   }
 
+  .reduction .badge {
+    padding: 0.5em;
+  }
+
   .reduction h2 {
     font-size: 1rem;
     font-weight: 200;
@@ -945,7 +949,7 @@ a {
 
   .about__image img {
     height: 450px;
-    width: 80%;
+    width: 100%;
     border-radius: 25px;
     object-fit: cover;
   }
