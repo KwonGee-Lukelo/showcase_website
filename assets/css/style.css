@@ -864,6 +864,14 @@ a {
   .reduction .btn__reduction {
     display: none;
   }
+
+  .about {
+    width: 100%;
+  }
+
+  main {
+    padding: 6em 0.1em;
+  }
 }
 
 @media screen and (max-width: 980px) {
