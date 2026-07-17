@@ -629,7 +629,30 @@ INFORMATION*/
     margin-top: 2rem;
   }
 
+  .background__section img {
+    aspect-ratio: 1/1;
+    filter: blur(2px);
+    object-fit: cover;
+    display: block;
+  }
+
   .reduction {
+    left: 30px;
+    bottom: 50px;
+    color: #fff;
+  }
+
+  .reduction h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+
+  .reduction .subtitle {
+    width: 80%;
+    margin: 2em 0;
+  }
+
+  /* .reduction {
     position: static;
     padding: 1.5rem;
     max-width: 100%;
@@ -637,7 +660,7 @@ INFORMATION*/
 
   .reduction .subtitle {
     width: 100%;
-  }
+  } */
 
   article {
     gap: 1rem;
