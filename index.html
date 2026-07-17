@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.min.css"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Site vitrine</title>
+    <title>Burger Guys</title>
   </head>
 
   <body>
@@ -12,21 +16,302 @@
       <nav>
         <a href="#" class="logo" aria-label="logo">
           <img src="assets/images/logo.png" alt="logo burger" />
-          <span>Burger</span>
+          <span>BG</span>
         </a>
+
+        <input type="checkbox" name="menu__toggle" id="menu__toggle" />
+        <label for="menu__toggle" class="menu__btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
 
         <ul class="nav">
           <li class="nav__item">
-            <a href="" class="nav__link active">Home</a>
+            <a href="" class="nav__link active" aria-label="Acceuil">Acceuil</a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav__link">Menu</a>
+            <a
+              href="/assets/pages/menu.html"
+              class="nav__link"
+              aria-label="Menu"
+              >Menu</a
+            >
           </li>
           <li class="nav__item">
-            <a href="" class="nav__link">Contact</a>
+            <a
+              href="/assets/pages/contact.html"
+              class="nav__link"
+              aria-label="Contact"
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
+
+      <section class="hero container" aria-label="Section acceuil">
+        <div class="content" aria-label="Contenu de la section acceuil">
+          <small class="info">OUVERT TOUS LES JOURS DE 11H A 00H</small>
+          <h1>LES MEILLEURS BURGERS</h1>
+          <p class="subtitle">
+            Des burgers généreux, préparés avec des produits frais et une viande
+            100% boeuf. Le goût qui fait la différence
+          </p>
+          <button>COMMANDER MAINTENANT</button>
+
+          <div class="delivery">
+            <div class="circle"></div>
+            <div class="delivery__person">
+              <img
+                src="/assets/images/livreur.png"
+                alt="Agent de livraison sur sa moto"
+              />
+              <div class="delivery__text">
+                <h3>LIVRAISON GRATUITE</h3>
+                <p>
+                  Commandez en ligne et recevez en 30min <br />
+                  chez vous
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="illustration__content">
+          <div class="illustration__back"></div>
+
+          <div class="illustration__image">
+            <img
+              src="assets/images/burger-hero.png"
+              alt="Un delicieux burger"
+            />
+          </div>
+
+          <div class="illustration__contact">
+            <p>APPELEZ - NOUS :</p>
+            <p class="phone__number">+243 82 600 23 23</p>
+          </div>
+        </div>
+      </section>
     </header>
+
+    <main class="container">
+      <section
+        class="section__header"
+        aria-label="L'entête du contenu principal de la page"
+      >
+        <div class="background__section">
+          <img
+            src="/assets/images/bg-hero-main.jpg"
+            alt="Un plateau composé d'un plat de burger, frite, keutchop"
+          />
+        </div>
+
+        <div class="reduction">
+          <p class="badge">-50%</p>
+          <h2>SPECIAL COMBO</h2>
+          <p class="subtitle">
+            Des burgers généreux, préparés avec des produits frais et une viande
+            100% boeuf. Le goût qui fait la différence
+          </p>
+          <button>COMMANDER MAINTENANT</button>
+        </div>
+      </section>
+
+      <section class="menu">
+        <article>
+          <div class="burger">
+            <img src="/assets/images/burger-beef.png" alt="burger beef" />
+          </div>
+
+          <div class="burger__details">
+            <h3>BEEF</h3>
+            <h4>BIG BURGER</h4>
+            <p class="burger__subtitle subtitle">
+              Des burgers généreux, préparés avec des produits frais et une
+              viande 100% boeuf. Le goût qui fait la différence
+            </p>
+
+            <div class="cta">
+              <h3>15$</h3>
+              <button>COMMANDER</button>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="burger__details">
+            <h3>CHICKEN</h3>
+            <h4>BURGER</h4>
+            <p class="burger__subtitle subtitle">
+              Des burgers généreux, préparés avec des produits frais et une
+              viande 100% boeuf. Le goût qui fait la différence
+            </p>
+
+            <div class="cta">
+              <h3>9$</h3>
+              <button>COMMANDER</button>
+            </div>
+          </div>
+
+          <div class="burger">
+            <img src="/assets/images/burger-chicken.png" alt="burger beef" />
+          </div>
+        </article>
+
+        <article>
+          <div class="burger">
+            <img src="/assets/images/burger-classic.png" alt="burger beef" />
+          </div>
+
+          <div class="burger__details">
+            <h3>CLASSIC</h3>
+            <h4>BURGER</h4>
+            <p class="burger__subtitle subtitle">
+              Des burgers généreux, préparés avec des produits frais et une
+              viande 100% boeuf. Le goût qui fait la différence
+            </p>
+
+            <div class="cta">
+              <h3>5$</h3>
+              <button>COMMANDER</button>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="about">
+        <div class="about__image">
+          <img src="/assets/images/about.jpg" alt="" />
+        </div>
+
+        <div class="about__content">
+          <h2>Notre Histoire</h2>
+          <p>
+            <span>Burger Guys</span> est né d'une passion: celle du vrai burger
+            américain. Depuis notre ouverture au coeur de Kinshasa, nous avons
+            pour mission de vous servir des burgers génreux, préparés avec des
+            ingrédients frais et de haute qualité
+          </p>
+
+          <p>
+            Ce qui fait notre différence ? Nos sauces faites-maison. Chaque
+            recette est élaborée en interne pour rehausser la saveur et vous
+            offrir une expérience unique à chaque bouhée.
+          </p>
+
+          <p>
+            Que ce soit pour un déjeuner rapide, un dîner entre amis ou une
+            livraison, nous mettons un point d'honneur à vous offrir un service
+            chaleureux dans un cadre moderne
+          </p>
+        </div>
+      </section>
+
+      <section class="informations">
+        <h2>Retrouvez - nous</h2>
+
+        <ul class="cards__container">
+          <li class="card address">
+            <address>
+              <h3>Adresse</h3>
+              Bd Du 30 Juin, 3ème Etage, Matrix Mall, Kinshasa, République
+              Démocratique du Congo
+            </address>
+          </li>
+
+          <li class="card">
+            <h3>Horaires</h3>
+            <p>Ouvert tous les jours de <time>11h00 - 00h00</time></p>
+          </li>
+
+          <li class="card">
+            <h3>Contact</h3>
+            <a href="tel:+243826002323" aria-label="Numero de telephone"
+              >+243 82 600 2323</a
+            >
+          </li>
+
+          <li class="card services">
+            <h3>Services</h3>
+            <p>
+              Places assises, Plats à emporter, Service de livraison, Parking,
+              Paiement par Carte
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer container">
+        <div class="us">
+          <h4 class="logo" aria-label="logo">
+            <img src="assets/images/logo.png" alt="logo burger" />
+            Burger Guys
+          </h4>
+
+          <p class="us__subtitle subtitle">
+            Des burgers généreux, préparés avec des produits frais et une viande
+            100% boeuf. Le goût qui fait la différence
+          </p>
+
+          <ul>
+            <li>
+              <a href="#" aria-label="Instagram" target="_blank"
+                ><i class="ri-instagram-fill" aria-label="Instagram"></i
+              ></a>
+            </li>
+
+            <li>
+              <a href="#" aria-label="titkok" target="_blank"
+                ><i class="ri-tiktok-fill" aria-label="Tiktok"></i
+              ></a>
+            </li>
+
+            <li>
+              <a href="#" aria-label="Whatsapp" target="_blank"
+                ><i class="ri-whatsapp-fill" aria-label="Github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="special">
+          <h4>SPECIALITE</h4>
+          <ul>
+            <li>Beff Burger</li>
+            <li>Chicken Burger</li>
+            <li>Classic Burger</li>
+          </ul>
+        </div>
+
+        <address class="footer__address">
+          <h4>CONTACT NOUS</h4>
+          <ul>
+            <li>
+              <i class="ri-map-pin-line" aria-label="Localisation"></i>
+              Bd Du 30 Juin, 3ème Etage, Matrix Mall
+            </li>
+
+            <li>
+              <i class="ri-phone-line" aria-label="Telephone"></i>
+              <a href="tel:+243826002323" aria-label="Numero de telephone"
+                >+243 82 600 2323</a
+              >
+            </li>
+
+            <li>
+              <i class="ri-mail-fill" aria-label="Email"></i>
+              <a
+                href="mailto:contact@burgerguys.cd?subjecy=Demande d'information&body=Bonjour Burgr Guys,"
+                >contact@burgerguys.cd</a
+              >
+            </li>
+          </ul>
+        </address>
+      </section>
+      <div class="copy">&copy;Burger Guys - Tout droit reservés</div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.min.css"
+    />
+    <!-- <link rel="stylesheet" href="/assets/css/style.css" /> -->
+    <link rel="stylesheet" href="/assets/css/style2.css" />
+    <title>Burger Guys</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="/index.html" class="logo" aria-label="logo">
+          <img src="/assets/images/logo.png" alt="logo burger" />
+          <span>BG</span>
+        </a>
+
+        <input type="checkbox" name="menu__toggle" id="menu__toggle" />
+        <label for="menu__toggle" class="menu__btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <ul class="nav">
+          <li class="nav__item">
+            <a href="/index.html" class="nav__link active" aria-label="Acceuil"
+              >Acceuil</a
+            >
+          </li>
+          <li class="nav__item">
+            <a
+              href="/assets/pages/menu.html"
+              class="nav__link"
+              aria-label="Menu"
+              >Menu</a
+            >
+          </li>
+          <li class="nav__item">
+            <a
+              href="/assets/pages/contact.html"
+              class="nav__link"
+              aria-label="Contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container page">
+      <section class="products__header">
+        <p class="products__eyebrow">BURGER GUYS</p>
+        <h1 class="products__title">Le meilleur burger de Kinshasa</h1>
+        <p class="products__text">Découvrez le goût qui fait la différence</p>
+      </section>
+
+      <section class="products__grid">
+        <article class="product-card" aria-label="Carte du plat Pondu">
+          <div class="product-card__visual">
+            <img
+              class="product-card__image"
+              src="/assets/images/firehouse.jpg"
+              alt="Burger au chaud"
+            />
+            <button
+              class="product-card__favorite"
+              type="button"
+              aria-label="Ajouter Pondu aux favoris"
+            >
+              ♥
+            </button>
+          </div>
+
+          <div class="product-card__body">
+            <h2 class="product-card__title">The Firehouse</h2>
+            <p class="product-card__description">
+              Feuilles de manioc mijotées avec huile de palme, épices douces et
+              poisson fumé. Un plat riche et traditionnel.
+            </p>
+
+            <div class="product-card__meta">
+              <div class="product-card__price">8.5$</div>
+              <div class="product-card__rating" aria-label="Note 4.9 étoiles">
+                ★★★★☆ <span>4.9</span>
+              </div>
+            </div>
+
+            <div class="product-card__actions">
+              <button
+                class="product-card__button product-card__button--primary"
+                type="button"
+              >
+                🛒 Ajouter au panier
+              </button>
+              <button
+                class="product-card__button product-card__button--icon"
+                type="button"
+                aria-label="Favoriser Burger Firehouse"
+              >
+                ♥
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" aria-label="Carte du plat Pondu">
+          <div class="product-card__visual">
+            <img
+              class="product-card__image"
+              src="/assets/images/grilled burger.jpg"
+              alt="Burger au grille"
+            />
+            <button
+              class="product-card__favorite"
+              type="button"
+              aria-label="Ajouter Grilled Burger"
+            >
+              ♥
+            </button>
+          </div>
+
+          <div class="product-card__body">
+            <h2 class="product-card__title">Grilled Burger</h2>
+            <p class="product-card__description">
+              Feuilles de manioc mijotées avec huile de palme, épices douces et
+              poisson fumé. Un plat riche et traditionnel.
+            </p>
+
+            <div class="product-card__meta">
+              <div class="product-card__price">8.3$</div>
+              <div class="product-card__rating" aria-label="Note 4.9 étoiles">
+                ★★★★☆ <span>4.9</span>
+              </div>
+            </div>
+
+            <div class="product-card__actions">
+              <button
+                class="product-card__button product-card__button--primary"
+                type="button"
+              >
+                🛒 Ajouter au panier
+              </button>
+              <button
+                class="product-card__button product-card__button--icon"
+                type="button"
+                aria-label="Favoriser Burger Firehouse"
+              >
+                ♥
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" aria-label="Carte du plat Pondu">
+          <div class="product-card__visual">
+            <img
+              class="product-card__image"
+              src="/assets/images/giant burger.jpg"
+              alt="Burger geant"
+            />
+            <button
+              class="product-card__favorite"
+              type="button"
+              aria-label="Ajouter Giant Burger"
+            >
+              ♥
+            </button>
+          </div>
+
+          <div class="product-card__body">
+            <h2 class="product-card__title">Giant Burger</h2>
+            <p class="product-card__description">
+              Feuilles de manioc mijotées avec huile de palme, épices douces et
+              poisson fumé. Un plat riche et traditionnel.
+            </p>
+
+            <div class="product-card__meta">
+              <div class="product-card__price">9$</div>
+              <div class="product-card__rating" aria-label="Note 4.9 étoiles">
+                ★★★★☆ <span>4.9</span>
+              </div>
+            </div>
+
+            <div class="product-card__actions">
+              <button
+                class="product-card__button product-card__button--primary"
+                type="button"
+              >
+                🛒 Ajouter au panier
+              </button>
+              <button
+                class="product-card__button product-card__button--icon"
+                type="button"
+                aria-label="Favoriser Burger Firehouse"
+              >
+                ♥
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" aria-label="Carte du plat Pondu">
+          <div class="product-card__visual">
+            <img
+              class="product-card__image"
+              src="/assets/images/burger bumb.jpg"
+              alt="Burger bumb"
+            />
+            <button
+              class="product-card__favorite"
+              type="button"
+              aria-label="Ajouter Burger bumb"
+            >
+              ♥
+            </button>
+          </div>
+
+          <div class="product-card__body">
+            <h2 class="product-card__title">Burger Bumb</h2>
+            <p class="product-card__description">
+              Feuilles de manioc mijotées avec huile de palme, épices douces et
+              poisson fumé. Un plat riche et traditionnel.
+            </p>
+
+            <div class="product-card__meta">
+              <div class="product-card__price">9$</div>
+              <div class="product-card__rating" aria-label="Note 4.9 étoiles">
+                ★★★★☆ <span>4.9</span>
+              </div>
+            </div>
+
+            <div class="product-card__actions">
+              <button
+                class="product-card__button product-card__button--primary"
+                type="button"
+              >
+                🛒 Ajouter au panier
+              </button>
+              <button
+                class="product-card__button product-card__button--icon"
+                type="button"
+                aria-label="Favoriser Burger Firehouse"
+              >
+                ♥
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" aria-label="Carte du plat Pondu">
+          <div class="product-card__visual">
+            <img
+              class="product-card__image"
+              src="/assets/images/Sandwich au poulet grillé.jpg"
+              alt="Sandwich au poulet grillé"
+            />
+            <button
+              class="product-card__favorite"
+              type="button"
+              aria-label="Ajouter Sandwich au poulet"
+            >
+              ♥
+            </button>
+          </div>
+
+          <div class="product-card__body">
+            <h2 class="product-card__title">Sandwich Poulet</h2>
+            <p class="product-card__description">
+              Feuilles de manioc mijotées avec huile de palme, épices douces et
+              poisson fumé. Un plat riche et traditionnel.
+            </p>
+
+            <div class="product-card__meta">
+              <div class="product-card__price">9$</div>
+              <div class="product-card__rating" aria-label="Note 4.9 étoiles">
+                ★★★★☆ <span>4.9</span>
+              </div>
+            </div>
+
+            <div class="product-card__actions">
+              <button
+                class="product-card__button product-card__button--primary"
+                type="button"
+              >
+                🛒 Ajouter au panier
+              </button>
+              <button
+                class="product-card__button product-card__button--icon"
+                type="button"
+                aria-label="Favoriser Burger Firehouse"
+              >
+                ♥
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" aria-label="Carte du plat Pondu">
+          <div class="product-card__visual">
+            <img
+              class="product-card__image"
+              src="/assets/images/sandwich legume.jpg"
+              alt="Sandwich legume"
+            />
+            <button
+              class="product-card__favorite"
+              type="button"
+              aria-label="Ajouter Sandwich legume"
+            >
+              ♥
+            </button>
+          </div>
+
+          <div class="product-card__body">
+            <h2 class="product-card__title">Sandwich Legume</h2>
+            <p class="product-card__description">
+              Feuilles de manioc mijotées avec huile de palme, épices douces et
+              poisson fumé. Un plat riche et traditionnel.
+            </p>
+
+            <div class="product-card__meta">
+              <div class="product-card__price">9$</div>
+              <div class="product-card__rating" aria-label="Note 4.9 étoiles">
+                ★★★★☆ <span>4.9</span>
+              </div>
+            </div>
+
+            <div class="product-card__actions">
+              <button
+                class="product-card__button product-card__button--primary"
+                type="button"
+              >
+                🛒 Ajouter au panier
+              </button>
+              <button
+                class="product-card__button product-card__button--icon"
+                type="button"
+                aria-label="Favoriser Burger Firehouse"
+              >
+                ♥
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" aria-label="Carte du plat Pondu">
+          <div class="product-card__visual">
+            <img
+              class="product-card__image"
+              src="/assets/images/sandwich panni.jpg"
+              alt="Sandwich panni"
+            />
+            <button
+              class="product-card__favorite"
+              type="button"
+              aria-label="Ajouter Sandwich panni"
+            >
+              ♥
+            </button>
+          </div>
+
+          <div class="product-card__body">
+            <h2 class="product-card__title">Sandwich Panni</h2>
+            <p class="product-card__description">
+              Feuilles de manioc mijotées avec huile de palme, épices douces et
+              poisson fumé. Un plat riche et traditionnel.
+            </p>
+
+            <div class="product-card__meta">
+              <div class="product-card__price">9$</div>
+              <div class="product-card__rating" aria-label="Note 4.9 étoiles">
+                ★★★★☆ <span>4.9</span>
+              </div>
+            </div>
+
+            <div class="product-card__actions">
+              <button
+                class="product-card__button product-card__button--primary"
+                type="button"
+              >
+                🛒 Ajouter au panier
+              </button>
+              <button
+                class="product-card__button product-card__button--icon"
+                type="button"
+                aria-label="Favoriser Burger Firehouse"
+              >
+                ♥
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" aria-label="Carte du plat Pondu">
+          <div class="product-card__visual">
+            <img
+              class="product-card__image"
+              src="/assets/images/tacos viande.jpg"
+              alt="Tacos viande"
+            />
+            <button
+              class="product-card__favorite"
+              type="button"
+              aria-label="Ajouter Tacos viande"
+            >
+              ♥
+            </button>
+          </div>
+
+          <div class="product-card__body">
+            <h2 class="product-card__title">Tacos viande</h2>
+            <p class="product-card__description">
+              Feuilles de manioc mijotées avec huile de palme, épices douces et
+              poisson fumé. Un plat riche et traditionnel.
+            </p>
+
+            <div class="product-card__meta">
+              <div class="product-card__price">9$</div>
+              <div class="product-card__rating" aria-label="Note 4.9 étoiles">
+                ★★★★☆ <span>4.9</span>
+              </div>
+            </div>
+
+            <div class="product-card__actions">
+              <button
+                class="product-card__button product-card__button--primary"
+                type="button"
+              >
+                🛒 Ajouter au panier
+              </button>
+              <button
+                class="product-card__button product-card__button--icon"
+                type="button"
+                aria-label="Favoriser Burger Firehouse"
+              >
+                ♥
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" aria-label="Carte du plat Pondu">
+          <div class="product-card__visual">
+            <img
+              class="product-card__image"
+              src="/assets/images/Taco Doritos Casserole.jpg"
+              alt="Tacos"
+            />
+            <button
+              class="product-card__favorite"
+              type="button"
+              aria-label="Ajouter Tacos"
+            >
+              ♥
+            </button>
+          </div>
+
+          <div class="product-card__body">
+            <h2 class="product-card__title">Tacos</h2>
+            <p class="product-card__description">
+              Feuilles de manioc mijotées avec huile de palme, épices douces et
+              poisson fumé. Un plat riche et traditionnel.
+            </p>
+
+            <div class="product-card__meta">
+              <div class="product-card__price">9$</div>
+              <div class="product-card__rating" aria-label="Note 4.9 étoiles">
+                ★★★★☆ <span>4.9</span>
+              </div>
+            </div>
+
+            <div class="product-card__actions">
+              <button
+                class="product-card__button product-card__button--primary"
+                type="button"
+              >
+                🛒 Ajouter au panier
+              </button>
+              <button
+                class="product-card__button product-card__button--icon"
+                type="button"
+                aria-label="Favoriser Burger Firehouse"
+              >
+                ♥
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" aria-label="Carte du plat Pondu">
+          <div class="product-card__visual">
+            <img
+              class="product-card__image"
+              src="/assets/images/milkshake.jpg"
+              alt="Milkshake"
+            />
+            <button
+              class="product-card__favorite"
+              type="button"
+              aria-label="Ajouter Milkshake"
+            >
+              ♥
+            </button>
+          </div>
+
+          <div class="product-card__body">
+            <h2 class="product-card__title">Milkshake</h2>
+            <p class="product-card__description">
+              Feuilles de manioc mijotées avec huile de palme, épices douces et
+              poisson fumé. Un plat riche et traditionnel.
+            </p>
+
+            <div class="product-card__meta">
+              <div class="product-card__price">5$</div>
+              <div class="product-card__rating" aria-label="Note 4.9 étoiles">
+                ★★★★☆ <span>4.9</span>
+              </div>
+            </div>
+
+            <div class="product-card__actions">
+              <button
+                class="product-card__button product-card__button--primary"
+                type="button"
+              >
+                🛒 Ajouter au panier
+              </button>
+              <button
+                class="product-card__button product-card__button--icon"
+                type="button"
+                aria-label="Favoriser Burger Firehouse"
+              >
+                ♥
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" aria-label="Carte du plat Pondu">
+          <div class="product-card__visual">
+            <img
+              class="product-card__image"
+              src="/assets/images/milkshake2.jpg"
+              alt="Milkshake"
+            />
+            <button
+              class="product-card__favorite"
+              type="button"
+              aria-label="Ajouter Milkshake"
+            >
+              ♥
+            </button>
+          </div>
+
+          <div class="product-card__body">
+            <h2 class="product-card__title">Milkshake</h2>
+            <p class="product-card__description">
+              Feuilles de manioc mijotées avec huile de palme, épices douces et
+              poisson fumé. Un plat riche et traditionnel.
+            </p>
+
+            <div class="product-card__meta">
+              <div class="product-card__price">5$</div>
+              <div class="product-card__rating" aria-label="Note 4.9 étoiles">
+                ★★★★☆ <span>4.9</span>
+              </div>
+            </div>
+
+            <div class="product-card__actions">
+              <button
+                class="product-card__button product-card__button--primary"
+                type="button"
+              >
+                🛒 Ajouter au panier
+              </button>
+              <button
+                class="product-card__button product-card__button--icon"
+                type="button"
+                aria-label="Favoriser Burger Firehouse"
+              >
+                ♥
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" aria-label="Carte du plat Pondu">
+          <div class="product-card__visual">
+            <img
+              class="product-card__image"
+              src="/assets/images/milkshake3.jpg"
+              alt="Milkshake"
+            />
+            <button
+              class="product-card__favorite"
+              type="button"
+              aria-label="Ajouter Milkshake"
+            >
+              ♥
+            </button>
+          </div>
+
+          <div class="product-card__body">
+            <h2 class="product-card__title">Milkshake</h2>
+            <p class="product-card__description">
+              Feuilles de manioc mijotées avec huile de palme, épices douces et
+              poisson fumé. Un plat riche et traditionnel.
+            </p>
+
+            <div class="product-card__meta">
+              <div class="product-card__price">5$</div>
+              <div class="product-card__rating" aria-label="Note 4.9 étoiles">
+                ★★★★☆ <span>4.9</span>
+              </div>
+            </div>
+
+            <div class="product-card__actions">
+              <button
+                class="product-card__button product-card__button--primary"
+                type="button"
+              >
+                🛒 Ajouter au panier
+              </button>
+              <button
+                class="product-card__button product-card__button--icon"
+                type="button"
+                aria-label="Favoriser Burger Firehouse"
+              >
+                ♥
+              </button>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer container">
+        <div class="us">
+          <h4 class="logo" aria-label="logo">
+            <img src="/assets/images/logo.png" alt="logo burger" />
+            Burger Guys
+          </h4>
+
+          <p class="us__subtitle subtitle">
+            Des burgers généreux, préparés avec des produits frais et une viande
+            100% boeuf. Le goût qui fait la différence
+          </p>
+
+          <ul>
+            <li>
+              <a href="#" aria-label="Instagram" target="_blank"
+                ><i class="ri-instagram-fill" aria-label="Instagram"></i
+              ></a>
+            </li>
+
+            <li>
+              <a href="#" aria-label="titkok" target="_blank"
+                ><i class="ri-tiktok-fill" aria-label="Tiktok"></i
+              ></a>
+            </li>
+
+            <li>
+              <a href="#" aria-label="Whatsapp" target="_blank"
+                ><i class="ri-whatsapp-fill" aria-label="Github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="special">
+          <h4>SPECIALITE</h4>
+          <ul>
+            <li>Beff Burger</li>
+            <li>Chicken Burger</li>
+            <li>Classic Burger</li>
+          </ul>
+        </div>
+
+        <address class="footer__address">
+          <h4>CONTACT NOUS</h4>
+          <ul>
+            <li>
+              <i class="ri-map-pin-line" aria-label="Localisation"></i>
+              Bd Du 30 Juin, 3ème Etage, Matrix Mall
+            </li>
+
+            <li>
+              <i class="ri-phone-line" aria-label="Telephone"></i>
+              <a href="tel:+243826002323" aria-label="Numero de telephone"
+                >+243 82 600 2323</a
+              >
+            </li>
+
+            <li>
+              <i class="ri-mail-fill" aria-label="Email"></i>
+              <a
+                href="mailto:contact@burgerguys.cd?subjecy=Demande d'information&body=Bonjour Burgr Guys,"
+                >contact@burgerguys.cd</a
+              >
+            </li>
+          </ul>
+        </address>
+      </section>
+      <div class="copy">&copy;Burger Guys - Tout droit reservés</div>
+    </footer>
+  </body>
+</html>
