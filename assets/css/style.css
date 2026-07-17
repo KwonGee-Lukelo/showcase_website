@@ -478,8 +478,8 @@ SECTION__HEADER*/
 
 .reduction {
   position: absolute;
-  left: 250px;
-  bottom: -550px;
+  left: 50px;
+  bottom: 80px;
   color: #fff;
   max-width: 600px;
 }
@@ -500,7 +500,7 @@ SECTION__HEADER*/
 }
 
 .reduction .subtitle {
-  width: 65%;
+  width: 80%;
   margin: 2em 0;
 }
 
@@ -561,7 +561,6 @@ ABOUT*/
 
 .about__image img {
   height: 450px;
-  max-width: 100%;
   border-radius: 25px;
   object-fit: cover;
 }
