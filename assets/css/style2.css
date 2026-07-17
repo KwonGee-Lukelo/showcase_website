@@ -166,6 +166,7 @@ MAIN*/
   margin: 0 auto 100px;
   text-align: center;
 }
+
 .products__eyebrow {
   margin: 0 0 10px;
   color: var(--color-badge);
@@ -374,7 +375,7 @@ MAIN*/
 
 /**************************
 ********************
-INFORMATION*/
+FOOTER*/
 footer {
   background-color: var(--color-primary);
   padding: 3em 1.5em;
@@ -614,8 +615,8 @@ RESPONSIVE****/
   }
 
   .products__header {
-    text-align: center;
     margin-bottom: 5em;
+    width: 100%;
   }
 
   .products__grid {
@@ -636,6 +637,10 @@ RESPONSIVE****/
   .products__grid article:nth-child(2),
   .products__grid article:nth-child(3) {
     margin-top: 0;
+  }
+
+  footer {
+    padding: 1em;
   }
 
   .footer {
