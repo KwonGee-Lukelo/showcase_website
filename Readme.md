@@ -12,13 +12,13 @@ Ce projet a été réalisé dans le cadre de la **Phase 1 – HTML, CSS & Git** 
 
 ### Desktop
 
-![Desktop Preview](./images/desktop.jpg)
+![Desktop Preview](./assets/images/desktop.jpg)
 
-![Desktop Preview](./images/menu%20desktop.jpg)
+![Desktop Preview](./assets/images/menu%20desktop.jpg)
 
 ### Mobile
 
-![Mobile Preview](./images/mobile.png)
+![Mobile Preview](./assets/images/mobile.png)
 
 ---
 
